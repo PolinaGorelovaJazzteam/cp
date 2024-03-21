@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build-cp": "nx run cp:build",
-    "start-cp": "nx run-many --target=build --projects=cp:start",
-    "build-all": "nx run-many --target=build --projects=cp, two"
+    "build-cp": "nx run-many --target=build --projects=cp",
+    "start-cp": "nx run-many --target=start --projects=cp",
+    "build-all": "nx run-many --target=build --projects=cp, two",
+    "lint-cp:fix": "nx run cp:lint --fix",
+    "lint-cp": "nx run cp:lint"
   },
   "private": true,
   "dependencies": {
